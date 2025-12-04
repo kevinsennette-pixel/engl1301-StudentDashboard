@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Tomas High School Impact</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="gator-logo">
+                    <img src="images/header_logo_img_89u4lncl0n8h0ahppgc.png" alt="Tomas High School Gator Logo" class="logo-image">
+                </div>
+                <div>
+                    <h1 class="header-title">The Tomas High School Impact</h1>
+                    <p class="header-subtitle">
+                        Home of the Gators • <span class="emerald-text">Emerald Green & Silver</span> • Richmond, TX
+                    </p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="container">
+            <div class="nav-buttons">
+                <button class="nav-btn active" data-section="intro">
+                    <span class="icon">🏫</span>
+                    Introduction
+                </button>
+                <button class="nav-btn" data-section="enrollment">
+                    <span class="icon">👥</span>
+                    Enrollment Impact
+                </button>
+                <button class="nav-btn" data-section="overcrowding">
+                    <span class="icon">👥</span>
+                    Overcrowding Crisis
+                </button>
+                <button class="nav-btn" data-section="boundaries">
+                    <span class="icon">📍</span>
+                    Boundary Changes
+                </button>
+                <button class="nav-btn" data-section="financial">
+                    <span class="icon">💰</span>
+                    Financial Impact
+                </button>
+                <button class="nav-btn" data-section="stories">
+                    <span class="icon">📈</span>
+                    Student Stories
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            
+            <!-- Introduction Section -->
+            <section id="intro" class="section active">
+                <div class="card">
+                    <h2 class="section-title">A New Chapter in Richmond Education</h2>
+                    
+                    <p class="text-large">
+                        
+                        In 2025, Lamar CISD opened Tomas High School, fundamentally changing the educational landscape for thousands of students in Richmond and Rosenberg, Texas. This project explores the question: <span class="emerald-text bold">How did the construction of Tomas High School transform the educational experience and daily life for students and families who previously attended Foster High School?</span>
+                    </p>
+                    
+                    <p class="text-large">
+                        
+                        Through interviews and analysis of enrollment data and attendance boundaries, this interactive dashboard reveals the impact of opening a new high school in an established community.
+                    </p>
+                    
+                    
+                    <div class="image-Tomas-hero">
+                        <img src="images/nc-gene-tomas-hs-lisd.png" alt="Tomas High School Building" class="hero-image">
+                    </div>
+                </div>
+
+                <!-- Quick Stats -->
+                <div class="stats-grid">
+                    <div class="stat-card emerald-border">
+                        <div class="stat-number emerald-text">1,391</div>
+                        <div class="stat-label">Students at Tomas HS</div>
+                    </div>
+                    <div class="stat-card silver-border">
+                        <div class="stat-number silver-text">500</div>
+                        <div class="stat-label">Students Redistricted from Foster</div>
+                    </div>
+                    <div class="stat-card emerald-light-border">
+                        <div class="stat-number emerald-light-text">125%</div>
+                        <div class="stat-label">Reduction in Foster Crowding</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Enrollment Section -->
+            <section id="enrollment" class="section">
+                <div class="card">
+                    <h2 class="section-title">Enrollment Impact</h2>
+                    
+                    <!-- Toggle for Before/After -->
+                    <div class="toggle-buttons">
+                        <button class="toggle-btn active" data-mode="before">Before Tomas (2024-25)</button>
+                        <button class="toggle-btn" data-mode="after">After Tomas (2025-26)</button>
+                    </div>
+
+                    <!-- Enrollment Visualization -->
+                    <div class="enrollment-grid">
+                        <!-- Before View -->
+                        <div id="before-view" class="enrollment-view active">
+                            <div class="enrollment-card">
+                                <h3>Foster High School</h3>
+                                <div class="enrollment-number">2,579</div>
+                                <div class="enrollment-label">Total Students</div>
+                            </div>
+                            <div class="enrollment-card not-built">
+                                <p>Tomas High School<br/>Not Yet Built</p>
+                            </div>
+                        </div>
+
+                        <!-- After View -->
+                        <div id="after-view" class="enrollment-view">
+                            <div class="enrollment-card">
+                                <h3>Foster High School</h3>
+                                <div class="enrollment-number">~2000</div>
+                                <div class="enrollment-label">Total Students</div>
+                                <div class="enrollment-change emerald-text">↓ ~500 students</div>
+                            </div>
+                            <div class="enrollment-card tomas-card">
+                                <h3>Tomas High School</h3>
+                                <div class="enrollment-number emerald-text">1391</div>
+                                <div class="enrollment-label">Total Students</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Analysis Text -->
+                    <div class="analysis-box">
+                        <h3>What This Means</h3>
+                        <p>
+                            The redistricting resulted in approximately 500 students moving from Foster to Tomas. According to interviews, Foster had been operating at 125% capacity before Tomas opened.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Overcrowding Section -->
+            <section id="overcrowding" class="section">
+                <div class="card">
+                    <h2 class="section-title">The Overcrowding Crisis at Foster</h2>
+                    
+                    <p class="text-large">
+                        By 2025, Foster High School was operating at 125% capacity, with 2,500 students in a building designed for 2,000. The strain was visible in every aspect of school life.
+                    </p>
+
+                    <div class="impact-grid">
+                        <div class="impact-card">
+                            <h4>Hallway Crowding</h4>
+                            <ul>
+                                <li>Students had to line up at doors before bell rang</li>
+                                <li>Risk of tardiness if not first out the door</li>
+                                <li>Claustrophobic conditions between classes</li>
+                                <li>"Always trying not to bump into somebody"</li>
+                            </ul>
+                        </div>
+
+                        <div class="impact-card">
+                            <h4>Temporary Solutions</h4>
+                            <ul>
+                                <li>Portable classrooms added near bus porch</li>
+                                <li>Good AC, but flooding issues when it rained</li>
+                                <li>Puddles made it difficult to access portables</li>
+                                <li>Students had to navigate between inside/outside</li>
+                            </ul>
+                        </div>
+
+                        <div class="impact-card">
+                            <h4>Facility Issues</h4>
+                            <ul>
+                                <li>Constant cockroaches and mice in building</li>
+                                <li>Old building with upkeep problems</li>
+                                <li>Restroom cleanliness issues</li>
+                                <li>Infrastructure strained by overcapacity</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h2 class="section-title">Student Experiences</h2>
+                    
+                    <div class="quote-grid">
+                        <div class="quote-card">
+                            <p class="quote-text">
+                                "If you're not already standing up and your bag is packed and you're lined up at the door, there's a good chance you're going to be late to your next class. You have to be ready a couple minutes before the bell rings."
+                            </p>
+                            <div class="quote-attribution">
+                                <span class="quote-name">— Isam Abawadeh</span>, Foster HS Class of 2025
+                            </div>
+                        </div>
+
+                        <div class="quote-card">
+                            <p class="quote-text">
+                                "It was certainly claustrophobic; you were always trying not to bump into somebody."
+                            </p>
+                            <div class="quote-attribution">
+                                <span class="quote-name">— Bryce McNeil</span>, Foster HS Class of 2025
+                            </div>
+                        </div>
+
+                        <div class="quote-card">
+                            <p class="quote-text">
+                                "You could find constant cockroaches and mice that would make their way into the building. The building was old and there were a lot of issues with upkeep, especially in the restrooms."
+                            </p>
+                            <div class="quote-attribution">
+                                <span class="quote-name">— Bryce McNeil</span>, Foster HS Class of 2025
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Boundary Changes Section -->
+            <section id="boundaries" class="section">
+                <div class="card">
+                    <h2 class="section-title">How Boundaries Changed</h2>
+
+                    
+                    <div class="map-container">
+                        <div class="map-placeholder">
+                            <div class="map-icon">📍</div>
+                            <p>PLACEHOLDER: Interactive map showing</p>
+                            <p>LCISD New Zoning Regulations</p>
+                        </div>
+                    </div>
+
+                    <!-- Selected Zone Details -->
+                    <div id="zone-details" class="zone-details" style="display: none;">
+                        <h3 id="zone-title">Zone Impact</h3>
+                        <div class="zone-info-grid">
+                            <div>
+                                <strong class="emerald-text">Previous School:</strong> Foster HS
+                            </div>
+                            <div>
+                                <strong class="emerald-text">New School:</strong> <span id="new-school">Tomas HS</span>
+                            </div>
+                            <div>
+                                <strong class="emerald-text">Commute Change:</strong> +/- X minutes
+                                <!-- PLACEHOLDER: Add actual data -->
+                            </div>
+                            <div>
+                                <strong class="emerald-text">Students Affected:</strong> ~XXX students
+                                <!-- PLACEHOLDER: Add actual data -->
+                            </div>
+                        </div>
+                        <p class="zone-description">
+                            <!-- PLACEHOLDER: Add specific findings for this zone -->
+                            According to interviews with families in this area, [INSERT FINDINGS]...
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Financial Impact Section -->
+            <section id="financial" class="section">
+                <div class="card">
+                    <h2 class="section-title">The Financial Reality</h2>
+                    
+                    <p class="text-large">
+                        Building Tomas High School required massive financial investment that impacted the entire Lamar CISD district. The construction was part of a 2020 bond package that included not just the high school, but an entire "family of schools"—elementary, middle, and high school—to serve the rapidly developing area.
+                    </p>
+
+                    <div class="impact-grid">
+                        <div class="impact-card">
+                            <h4>Initial Investment</h4>
+                            <ul>
+                                <li>November 2020: Bond package approved</li>
+                                <li>~$1 billion in bonds sought from Texas and investors</li>
+                                <li>Tens of millions just for land acquisition</li>
+                                <li>Built entire family of schools (elementary through high school)</li>
+                            </ul>
+                        </div>
+
+                        <div class="impact-card">
+                            <h4>District-Wide Cuts</h4>
+                            <ul>
+                                <li>All high schools: 25% budget reduction</li>
+                                <li>Funds redirected to Tomas construction</li>
+                                <li>Even with cuts, Tomas felt financially constrained</li>
+                                <li>District still needed to borrow additional money</li>
+                            </ul>
+                        </div>
+
+                        <div class="impact-card">
+                            <h4>Long-Term Impact</h4>
+                            <ul>
+                                <li>Financial recovery estimated: 5-10 years</li>
+                                <li>Not a short-term investment like a car</li>
+                                <li>Bought land + built infrastructure permanently</li>
+                                <li>Must wait for return on investment</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h2 class="section-title">Impact on Foster High School</h2>
+                    
+                    <p class="text-large">
+                        Foster faced a double impact: budget cuts combined with decreased enrollment meant fewer resources per program.
+                    </p>
+
+                    <div class="quote-grid">
+                        <div class="quote-card">
+                            <p class="quote-text">
+                                "This is going to set you back probably five to ten years. It's a really big investment. This is not like, oh, I bought a car and I could trade it in. No, you bought land and then you built up the school. You're going to have to wait to get your investment back."
+                            </p>
+                            <div class="quote-attribution">
+                                <span class="quote-name">— Isam Abawadeh</span>, Foster HS Class of 2025
+                            </div>
+                        </div>
+
+                        <div class="quote-card">
+                            <p class="quote-text">
+                                "I think since Tomas took so much funding and students from Foster, the school has a possibility to go into the red in the coming years."
+                            </p>
+                            <div class="quote-attribution">
+                                <span class="quote-name">— Bryce McNeil</span>, Foster HS Class of 2025
+                            </div>
+                        </div>
+
+                        <div class="quote-card">
+                            <p class="quote-text">
+                                "They already cut Foster's budget and now that they're going to be under capacity, I actually think it might just be a little bit worse for Foster because you have less students going there anyway."
+                            </p>
+                            <div class="quote-attribution">
+                                <span class="quote-name">— Isam Abawadeh</span>, Foster HS Class of 2025
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Student Stories Section -->
+            <section id="stories" class="section">
+                <div class="card">
+                    <h2 class="section-title">Student Voices</h2>
+
+                    <!-- Student Quote Cards -->
+                    <div class="quotes-container">
+                        <div class="quote-card">
+                            <div class="quote-content">
+                                <!-- PLACEHOLDER: Student photo -->
+                                <div class="student-avatar">👤</div>
+                                <div class="quote-text-container">
+                                    <p class="quote-text">
+                                        ""
+                                    </p>
+                                    <div class="student-info">
+                                        <div class="student-name emerald-text">Student A</div>
+                                        <div class="student-meta">Tomas HS • Class of 2024</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="quote-card">
+                            <div class="quote-content">
+                                <!-- PLACEHOLDER: Student photo -->
+                                <div class="student-avatar">👤</div>
+                                <div class="quote-text-container">
+                                    <p class="quote-text">
+                                        ""
+                                    </p>
+                                    <div class="student-info">
+                                        <div class="student-name emerald-text">Student B</div>
+                                        <div class="student-meta">Foster HS • Class of 2023</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="quote-placeholder">
+                            <p>PLACEHOLDER: Add 3-5 more interview quotes</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p class="footer-title">Research Methods & Sources</p>
+                <p>• [Add sources]</p>
+                <p class="footer-credit">
+                    Created by Kevin Sennette • English 1301• 12/01/2025
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
