@@ -75,3 +75,27 @@ zoneBtns.forEach(btn => {
         zoneDetails.style.display = 'block';
     });
 });
+
+// Expand/collapse attachments in Student Voices quote cards
+const quoteCards = document.querySelectorAll('.quote-card');
+
+quoteCards.forEach(card => {
+    // Ensure keyboard focus
+    card.addEventListener('click', (e) => {
+        // don't toggle when clicking an actual link inside the attachments
+        if (e.target.closest('a')) return;
+
+        const isExpanded = card.classList.toggle('expanded');
+        card.setAttribute('aria-expanded', isExpanded ? 'true' : 'false');
+        const attachments = card.querySelector('.attachments');
+        if (attachments) attachments.setAttribute('aria-hidden', isExpanded ? 'false' : 'true');
+    });
+
+    // Allow Enter and Space to toggle
+    card.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            card.click();
+        }
+    });
+});

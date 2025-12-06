@@ -386,6 +386,12 @@ body {
     margin-bottom: 1.5rem;
     border: 1px solid #475569;
 }
+.map-image {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    border-radius: 0.5rem;
+}
 
 .map-placeholder {
     aspect-ratio: 16 / 9;
@@ -548,6 +554,41 @@ body {
     border: 2px dashed #475569;
     text-align: center;
     color: #94a3b8;
+}
+
+/* Expandable attachments for quote cards */
+.quote-card {
+    cursor: pointer;
+}
+
+.quote-card .attachments {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.35s ease, padding 0.25s ease;
+    padding-top: 0;
+}
+
+.quote-card.expanded .attachments {
+    max-height: 480px; /* large enough to show several attachments */
+    padding-top: 1rem;
+}
+
+.attachment-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.attachment {
+    display: block;
+    color: #bfead5;
+    text-decoration: none;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid rgba(255,255,255,0.04);
+}
+
+.attachment:hover {
+    text-decoration: underline;
 }
 
 /* Themes Container */
