@@ -99,3 +99,20 @@ quoteCards.forEach(card => {
         }
     });
 });
+// Development slider functionality
+const devNavBtns = document.querySelectorAll('.slider-nav-btn');
+const devSlides = document.querySelectorAll('.dev-slide');
+
+devNavBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+        const targetDev = btn.dataset.dev;
+        
+        // Remove active class from all buttons and slides
+        devNavBtns.forEach(b => b.classList.remove('active'));
+        devSlides.forEach(s => s.classList.remove('active'));
+        
+        // Add active class to clicked button and target slide
+        btn.classList.add('active');
+        document.getElementById(targetDev).classList.add('active');
+    });
+});
